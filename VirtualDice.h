@@ -5,10 +5,11 @@
 
 class VirtualDice
 {
-    pubic:
-      VirtualDice(bool double, int aPin);
+    public:
+      VirtualDice(int isDouble, int aPin);
       int roll();
+      void init();
     private:
-      bool _d;
+      int _d;
       int _aPin;
-}
+};

@@ -6,10 +6,10 @@
 class VirtualDice
 {
     public:
-      VirtualDice(bool isDouble, int aPin);
+      VirtualDice(int isDouble, int aPin);
       int roll();
       void init();
     private:
-      bool _d;
+      int _d;
       int _aPin;
 };

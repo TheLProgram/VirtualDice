@@ -1,0 +1,3 @@
+VirtualDice KEYWORD1
+roll KEYWORD2
+init KEYWORD2

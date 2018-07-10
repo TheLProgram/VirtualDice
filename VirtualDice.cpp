@@ -10,12 +10,8 @@ int VirtualDice::roll()
     if (_d = true) {
         return random(13);
     }
-    else if (_d = false) {
+    else {
         return random(7);
-    }
-    else
-    {
-        return 0;
     }
 }
 void VirtualDice::init()

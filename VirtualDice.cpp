@@ -1,8 +1,7 @@
 #include "VirtualDice.h"
 
-VirtualDice::VirtualDice(bool isDouble, int aPin)
+VirtualDice::VirtualDice(bool isDouble)
 {
-    _aPin = aPin;
     _d = isDouble;
 }
 int VirtualDice::roll()
@@ -13,8 +12,4 @@ int VirtualDice::roll()
     else {
         return random(1,7);
     }
-}
-void VirtualDice::init()
-{
-    randomSeed(analogRead(_aPin));
 }
